@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+h1,h2,h3{
+    padding-top: 20px; 
+    margin-bottom: 20px;
+    color: rgb(36, 35, 35);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* productos */
+.productos{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .productos figure{
+    text-align: center;
+    width: 30%;
+    border-radius: 4px;
+    border: solid;
+    }
+
+    .productos figure figcaption{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: black;
+    }
+    
+    .productos figure p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 10px;
+        color: black;
+    }
+
+    .productos figure img{
+        width: 100%;
+    }
+
+/* Servicios */
+    .servicios{
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "uno" 
+        "dos" 
+        "tres"
+        "cuatro";
+        gap: 5px;
+    }
+    
+        .servicios section{
+            border: 3px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+    
+
+        .servicios .prod1{
+            grid-area: uno;
+            display: flex;
+            align-items: center;
+        }
+    
+        .servicios .prod2{
+            grid-area: dos;
+            display: flex;
+            justify-content: flex-start;
+    
+            align-items: center;
+        }
+    
+        .servicios .prod3{
+            grid-area: tres;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    
+        .servicios .prod4{
+            grid-area: cuatro;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+
+.nosotros{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 100px 400px;
+    grid-template-areas: 
+    "desc desc desc" 
+    "titulo titulo titulo" 
+    "uno dos tres";
+    gap: 5px;
+}
+    .nosotros .desc{
+
+        grid-area: desc;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nosotros .titulo{
+
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros .barb1{
+
+        grid-area: uno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        border-style: solid;
+    
+    }
+
+    .nosotros .barb2{
+ 
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        border-style: solid;
+    }
+    .nosotros .barb3{
+
+        grid-area: tres;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        border-style: solid;
+    }
+
+.calendario{
+    margin: 10px;
+    background-color: brown;
+}
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendario p{
+    color: white;
+}
+.padding-left{
+    padding-left: 15px;
+}
+.padding-bottom{
+    padding-bottom: 15px;
+}
+h1{
+    font-size: 3em;
+}
+
+.text-left{
+    text-align: left;
+}
+.display{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.bg-color{
+    background-color: rgb(184, 179, 179);
+}
+.btn-color{
+    background-color: rgb(133, 55, 55);
+    color: white;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    padding: auto;
+}
+/*botonera */
+
+.botonera{
+    background-color: rgb(133, 55, 55);
+}
+            .botonera ul li a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1,6em;
+                font-weight: 300;
+            }
+            .botonera ul li a:hover{
+                color: black;
+            }
+
+
+main section{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+    main section p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: grey;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        text-align: center;
+        
+    }
+
+
+
+/* INICIO FOTTER */
+
+footer{
+    background-color: rgb(133, 55, 55);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+    footer svg{
+        fill: black;
+        width: 30px;
+        margin-left: 16px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-right: 20px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+        footer a:hover{
+           color: black;
+        }
+    
+/* FINAL FOOTER */
+
+@media (width < 768px) {
+    footer{
+        flex-direction: column;
+    }
+    footer svg{
+        width: 40px;
+    }
+    footer a{
+        text-align: center;
+        padding: 5px;
+        margin-right: 0px;
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "uno" 
+        "dos" 
+        "tres"
+        "cuatro";
+        gap: 5px;
+    }
+    .servicios .prod1{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .servicios .prod2{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .servicios .prod3{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .servicios .prod4{
+        flex-direction: column; 
+        flex-wrap: wrap;
+    }
+    .productos{
+        flex-wrap: wrap;
+    }
+    .productos figure{
+        width: 100%;
+    }
+}
