@@ -1,0 +1,47 @@
+@media (width < 768px) {
+    footer{
+        flex-direction: column;
+        svg{
+            width: 40px;
+        }
+        a{
+            text-align: center;
+            padding: 5px;
+            margin-right: 0px;
+        }
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "uno" 
+        "dos" 
+        "tres"
+        "cuatro";
+        gap: 5px;
+        .prod1{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .prod2{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .prod3{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .prod4{
+            flex-direction: column; 
+            flex-wrap: wrap;
+        }
+
+    }
+    .productos{
+        flex-wrap: wrap;
+        figure{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+//commons
+
+h1,h2,h3{
+    padding-top: 20px; 
+    margin-bottom: 20px;
+    color: rgb(36, 35, 35);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.calendario{
+    margin: 10px;
+    background-color: brown;
+}
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendario p{
+    color: white;
+}
+.padding-left{
+    padding-left: 15px;
+}
+.padding-bottom{
+    padding-bottom: 15px;
+}
+h1{
+    font-size: 3em;
+}
+
+.text-left{
+    text-align: left;
+}
+.display{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.bg-color{
+    background-color: rgb(184, 179, 179);
+}
+.btn-color{
+    background-color: rgb(133, 55, 55);
+    color: white;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    padding: auto;
+}

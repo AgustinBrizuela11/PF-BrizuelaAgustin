@@ -1,0 +1,44 @@
+//servicios
+
+
+.servicios{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "uno" 
+    "dos" 
+    "tres"
+    "cuatro";
+    gap: 5px;
+    section{
+        margin: 15px;
+        border: 3px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .prod1{
+        grid-area: uno;
+        display: flex;
+        align-items: center;
+    }
+    .prod2{
+        grid-area: dos;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .prod3{
+        grid-area: tres;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .prod4{
+        grid-area: cuatro;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

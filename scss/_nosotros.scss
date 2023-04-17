@@ -1,0 +1,69 @@
+//Nosotros
+.nosotros{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 100px 400px;
+    grid-template-areas: 
+    "desc desc desc" 
+    "titulo titulo titulo" 
+    "uno dos tres";
+    gap: 5px;
+    .desc{
+
+        grid-area: desc;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .titulo{
+        
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .barb1{
+        margin-left: 15px;
+         grid-area: uno;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border: 2px;
+         border-style: solid;
+     }
+     .barb2{
+        margin-left: 15px;
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        border-style: solid;
+    }
+    .barb3{
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-area: tres;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        border-style: solid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

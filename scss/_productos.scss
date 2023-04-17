@@ -1,0 +1,27 @@
+//Productos 
+
+.productos{
+    display: flex;
+    justify-content: space-between;
+    figure{
+        text-align: center;
+        width: 30%;
+        border-radius: 4px;
+        border: solid;
+        figcaption{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: black;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin: 10px;
+            color: black;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

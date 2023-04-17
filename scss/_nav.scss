@@ -1,0 +1,19 @@
+//Botonera
+.botonera{
+    background-color: rgb(133, 55, 55);
+    ul{
+        li{
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1,6em;
+                font-weight: 300;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
