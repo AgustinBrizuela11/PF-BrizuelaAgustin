@@ -1,7 +1,7 @@
 //Footer
 
 footer{
-    background-color: rgb(133, 55, 55);
+    background-color: $mainColor;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -16,9 +16,9 @@ footer{
         color: white;
         display: block;
         margin-right: 20px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font;
         &:hover{
-            color: black;
+            color: $hoverColor;
          }
     }
 }

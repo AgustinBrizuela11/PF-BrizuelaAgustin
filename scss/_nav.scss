@@ -1,16 +1,23 @@
 //Botonera
 .botonera{
-    background-color: rgb(133, 55, 55);
+    background-color: $mainColor;
+    .navbar-brand {
+        @include screen(mobile){
+            img {
+                width: 70px;
+            }
+        }
+    }
     ul{
         li{
             a{
                 color: white;
                 text-decoration: none;
-                font-family: 'Roboto', sans-serif;
+                font-family: $font;
                 font-size: 1,6em;
                 font-weight: 300;
                 &:hover {
-                    color: black;
+                    color: $hoverColor
                 }
             }
         }

@@ -1,6 +1,12 @@
+/*FLEX*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .botonera {
   background-color: rgb(133, 55, 55);
+}
+@media only screen and (max-width: 767px) {
+  .botonera .navbar-brand img {
+    width: 70px;
+  }
 }
 .botonera ul li a {
   color: white;
@@ -105,92 +111,76 @@ h1 {
   padding: auto;
 }
 
-.nosotros {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 100px 400px;
-  grid-template-areas: "desc desc desc" "titulo titulo titulo" "uno dos tres";
-  gap: 5px;
-}
 .nosotros .desc {
-  grid-area: desc;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
+.nosotros .desc img {
+  width: 55%;
+  min-width: 300px;
+}
+.nosotros .desc p {
+  margin-top: 30px;
+  width: 70%;
+  min-width: 290px;
+}
 .nosotros .titulo {
-  grid-area: titulo;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nosotros .barb1 {
-  margin-left: 15px;
-  grid-area: uno;
+.nosotros .ejemplos {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nosotros .ejemplos .barb {
+  display: flex;
+  flex-basis: 30%;
+  min-width: 290px;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border: 2px;
   border-style: solid;
 }
-.nosotros .barb2 {
-  margin-left: 15px;
-  grid-area: dos;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px;
-  border-style: solid;
-}
-.nosotros .barb3 {
-  margin-left: 15px;
-  margin-right: 15px;
-  grid-area: tres;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px;
-  border-style: solid;
+.nosotros .ejemplos .barb img {
+  width: 100%;
 }
 
 .servicios {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "uno" "dos" "tres" "cuatro";
-  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  padding: 30px 0;
 }
-.servicios section {
-  margin: 15px;
+.servicios .prod {
+  display: flex;
+  justify-content: center;
+  margin: 0 8px;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
   border: 3px;
+  min-width: 290px;
   border-style: solid;
   border-radius: 10px;
 }
-.servicios .prod1 {
-  grid-area: uno;
-  display: flex;
-  align-items: center;
+.servicios .prod img {
+  min-width: 290px;
+  width: 30%;
 }
-.servicios .prod2 {
-  grid-area: dos;
+.servicios .prod div {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-}
-.servicios .prod3 {
-  grid-area: tres;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.servicios .prod4 {
-  grid-area: cuatro;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  width: 65%;
+  min-width: 290px;
 }
 
 footer {
@@ -268,7 +258,7 @@ main section {
 main section p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: grey;
+  color: rgb(44, 41, 41);
   font-size: 1.2em;
   line-height: 1.3em;
   text-align: center;

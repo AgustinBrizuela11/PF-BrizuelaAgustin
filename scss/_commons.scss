@@ -4,9 +4,11 @@ h1,h2,h3{
     padding-top: 20px; 
     margin-bottom: 20px;
     color: rgb(36, 35, 35);
-    font-family: 'Roboto', sans-serif;
+    font-family: $font;
     font-weight: 500;
 }
+
+
 
 .calendario{
     margin: 10px;
@@ -52,6 +54,7 @@ h1{
     background-color: rgb(133, 55, 55);
     color: white;
 }
+
 .contenedor{
     width: 100%;
     height: auto;

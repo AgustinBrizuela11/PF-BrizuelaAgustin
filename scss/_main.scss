@@ -6,9 +6,9 @@ main{
         padding-right: 15px;
         display: inline-block;
         p{
-            font-family: 'Roboto', sans-serif;
+            font-family: $font;
             font-weight: 400;
-            color: grey;
+            color: $pColor;
             font-size: 1.2em;
             line-height: 1.3em;
             text-align: center;
